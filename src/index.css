@@ -1,1 +1,23 @@
 @import "tailwindcss";
+
+@keyframes purchase-button-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.purchase-button-float {
+  animation: purchase-button-float 1.5s ease-in-out infinite;
+  will-change: transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .purchase-button-float {
+    animation: none;
+  }
+}

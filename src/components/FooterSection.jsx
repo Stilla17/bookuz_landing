@@ -3,14 +3,20 @@ import { Store, Phone, MapPin } from "lucide-react";
 
 const FooterSection = () => {
   return (
-    <div className="w-full flex flex-col items-center bg-white pt-[50px]">
+    <div className="w-full flex flex-col items-center bg-white ">
       <div className="w-full px-4 mb-6">
         <a
           href="https://docs.google.com/forms/d/e/1FAIpQLSfwOWj1Oe9TZyKuy530iSoWmVF8Yej1TcicfEv3xYOjjeamWg/viewform?usp=dialog"
           className="w-full"
         >
-          <button className="w-full mt-4 bg-[#0066cc] text-white text-xl font-bold py-3.5 rounded-xl border border-blue-400/30 shadow-lg active:scale-95 transition-transform duration-150">
-            Harid qilish
+          <button
+            className="purchase-button-float relative w-full text-white font-bold mt-7 py-4 items-center justify-center rounded-xl border border-[#FF9D35] bg-[#FF7900] shadow-xl active:scale-[0.99] active:opacity-90"
+            style={{
+              boxShadow:
+                "inset 0 -2px 2px rgba(56, 35, 25, 0.45), inset 0 30px 40px rgba(255,255,255,0.35), 0 4px 5px rgba(0,0,0,0.35)",
+            }}
+          >
+            Xarid qilish
           </button>
         </a>
       </div>
